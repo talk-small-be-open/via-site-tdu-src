@@ -8,10 +8,10 @@ baseline: spec
 				loads: #('default')
 		].
 
-		spec package: 'ViaSiteTemplate' with: [
+		spec package: 'ViaSiteTdu' with: [
 			spec 
 				requires: #('Via')].
 
 		spec
 			group: 'default' with: #('Core' );
-			group: 'Core' with: #('ViaSiteTemplate' ). ].
+			group: 'Core' with: #('ViaSiteTdu' ). ].

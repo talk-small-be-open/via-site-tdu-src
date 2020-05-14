@@ -26,7 +26,7 @@ renderTutorialOn: html
 					html image
 						onClick: 'javascript:open321VideoTutorial("', self website languageCode, '")';
 						attributeAt: #usemap put: '#videoTutorialMap';
-						url: ('/video/', self website videoTutorialImageFilename).
+						url: ('/site/video/', self website videoTutorialImageFilename).
 					html html: ('
 	<map name="videoTutorialMap">
 	<area shape="poly" coords="', itCoords asCommaString,'" href="javascript:open321VideoTutorial(&apos;it&apos;)" />
