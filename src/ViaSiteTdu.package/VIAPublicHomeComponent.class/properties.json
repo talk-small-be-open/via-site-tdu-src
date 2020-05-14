@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "VIAHomeBaseComponent",
-	"category" : "ViaSiteTdu",
+	"category" : "ViaSiteTdu-View",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
