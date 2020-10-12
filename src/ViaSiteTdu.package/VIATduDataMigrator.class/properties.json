@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "VIADataMigrator",
+	"category" : "ViaSiteTdu-Misc",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "VIATduDataMigrator",
+	"type" : "normal"
+}
