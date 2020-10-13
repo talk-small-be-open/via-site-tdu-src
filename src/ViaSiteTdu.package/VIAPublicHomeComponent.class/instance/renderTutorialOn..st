@@ -12,8 +12,8 @@ renderTutorialOn: html
 	frCoords := #(446 106 571 122 557 198 437 177) collect: stretcher.
 	deCoords := #(405 200 527 196 535 265 412 279) collect: stretcher.
 	
-	html div class: 'hm-fixed-background-a'; with: [
-		html div class: 'uk-container hm-margin-large-vertical uk-text-center '; with: [
+	html div class: 'tdu-fixed-background-a'; with: [
+		html div class: 'uk-container tdu-margin-large-vertical uk-text-center '; with: [
 "			html div id: 'award'; with: [
 				html anchor
 					url: 'http://www.ielassoc.org/awards_program/past_winners.html';

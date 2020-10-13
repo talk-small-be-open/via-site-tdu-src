@@ -1,3 +1,4 @@
 as yet unclassified
 states
-	^ Array with: self
+	^ super states
+"hm, not sure	^ Array with: self"
