@@ -55,6 +55,17 @@
 // 		}
 // }
 
+
+body {
+		&.loggedIn {
+				background-color: white;
+		}
+}
+
+div.coreContainer {
+		padding-top: 1em;
+}
+
 //
 // header 
 //
@@ -245,9 +256,9 @@ nav.tdu-navbar {
 @media (min-width: @breakpoint-small) {
 
 		div.coreContainer {
-				padding-top: 1em;
-				padding-left: 2em;
-				padding-right: 2em;
+//				padding-top: 1em;
+				// padding-left: 2em;
+				// padding-right: 2em;
 		}
 
 		div.VIAMyPortfolioComponent {
@@ -261,17 +272,22 @@ nav.tdu-navbar {
 // Not small phones
 @media (min-width: @breakpoint-small-max) {
 		body.loggedIn {
+				background-color: #eee;
 				div.core {
 						min-height: 500px;
 				}
 		}
 }
 
-// Only very small phones
+// Only small phones
 @media (max-width: @breakpoint-small) {
 
 		body.loggedIn {
 				background-attachment: scroll;
+		}
+
+		div.tdu-header {
+				border-bottom: 2px solid #eee;
 		}
 
 		.tdu-fixed-background-a,
