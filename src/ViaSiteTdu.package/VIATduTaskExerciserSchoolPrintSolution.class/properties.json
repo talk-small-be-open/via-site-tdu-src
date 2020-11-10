@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "VIATduTaskExerciserSchoolPrint",
+	"category" : "ViaSiteTdu-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "VIATduTaskExerciserSchoolPrintSolution",
+	"type" : "normal"
+}

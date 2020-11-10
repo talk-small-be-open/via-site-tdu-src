@@ -13,6 +13,6 @@ gotoExam: anExam
 	"Prüfung in Portfolio übernehmen"
 	self currentPortfolio addExam: anExam.
 	
-	examComponent := (VIAExamModuleExerciser exam: anExam).
+	examComponent := (VIATduExamModuleExerciser exam: anExam).
 	
 	self coreComponentWithBackButton: (VIATransactionComponent with: examComponent)

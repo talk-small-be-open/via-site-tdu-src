@@ -3,7 +3,7 @@ initialize
 
 	super initialize.
 
-	showMap := self wd propertyAt: #showSwissMapOnMyHome ifAbsent: [false].
+	showMap := self isFeature: #showSwissMapOnMyHome.
 	
 	showMap ifTrue: [
 		swissmap := VIAModulesMapComponent new.

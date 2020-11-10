@@ -1,3 +1,3 @@
 as yet unclassified
 swissGermanTag
-	^ self data findTagByCode: #swissgerman
+	^ VIATopicTag findOrCreateByCode: #swissgerman website: self
