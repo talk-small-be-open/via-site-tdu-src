@@ -62,14 +62,16 @@ function textinput_markAsEmpty(event, elementId) {
 /* Haupt JS init */
 $(document).ready(function(){
 
-	JoelPurra.PlusAsTab.setOptions({
-		// Use the enter key as tab keys
-		key: [13]
-	});	
+	if (! (typeof JoelPurra === 'undefined') ) {
+		JoelPurra.PlusAsTab.setOptions({
+			// Use the enter key as tab keys
+			key: [13]
+		});	
+		$('input.clozeTextPlaceholder').plusAsTab();
+	}
 
 	$('.popover').webuiPopover({trigger:'hover'});
 	$('span.dictionaryEntry').webuiPopover({trigger:'hover'});
-	$('input.clozeTextPlaceholder').plusAsTab();
 
   $("textarea").autosize();
 
