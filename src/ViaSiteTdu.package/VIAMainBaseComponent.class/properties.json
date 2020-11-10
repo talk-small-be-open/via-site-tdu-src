@@ -9,7 +9,8 @@
 		"coreComponent",
 		"flashMessages",
 		"mainMenu",
-		"menuRenderer"
+		"menuRenderer",
+		"hideBrowserMessage"
 	],
 	"name" : "VIAMainBaseComponent",
 	"type" : "normal"

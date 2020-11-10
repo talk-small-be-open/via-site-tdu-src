@@ -6,4 +6,4 @@ openModule: aModule
 
 	self currentPortfolio addModule: aModule.
 
-	self coreComponentWithBackButton: (VIAModuleExerciser smartFromModule: aModule).
+	self coreComponentWithBackButton: (VIATduModuleExerciser smartFromModule: aModule).

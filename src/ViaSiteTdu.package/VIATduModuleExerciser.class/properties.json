@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "VIAModuleExerciserBase",
+	"category" : "ViaSiteTdu-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"currentExerciser",
+		"exerciserComponents",
+		"subtitleTags",
+		"showIgnoreSwissgerman"
+	],
+	"name" : "VIATduModuleExerciser",
+	"type" : "normal"
+}

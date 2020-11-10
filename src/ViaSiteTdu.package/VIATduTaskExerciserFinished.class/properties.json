@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "VIATduTaskExerciserSolution",
+	"category" : "ViaSiteTdu-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"isShowingCongratulation"
+	],
+	"name" : "VIATduTaskExerciserFinished",
+	"type" : "normal"
+}
