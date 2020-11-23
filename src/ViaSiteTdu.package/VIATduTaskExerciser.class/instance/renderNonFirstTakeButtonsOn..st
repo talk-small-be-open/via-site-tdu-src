@@ -6,7 +6,7 @@ renderNonFirstTakeButtonsOn: html
 		callback: [self recheck];
 		with: [
 			html t: 'exerciser:recheck'.
-			html small t: 'exerciser:recheck:info'.
+			html small pT: 'exerciser:recheck:info'.
 		].
 "	html space.
 	html submitButton
@@ -21,5 +21,5 @@ renderNonFirstTakeButtonsOn: html
 		callback: [self revealAnswers];
 		with: [
 			html t: 'exerciser:showAnswers'.
-			html small t: 'exerciser:showAnswers:info'.
+			html small pT: 'exerciser:showAnswers:info'.
 		]

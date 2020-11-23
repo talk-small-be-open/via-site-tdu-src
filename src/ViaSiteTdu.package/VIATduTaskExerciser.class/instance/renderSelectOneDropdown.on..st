@@ -10,7 +10,7 @@ renderSelectOneDropdown: aSelectOneInput on: html
 		id: id;
 		"Künstlich verbreiten, weil Schriftartproblem mit Systemschriften auf Safari"
 		script: (JSStream on:
-			'$("#', id, '").width($("#', id, '").width() + 35).selectmenu()');
+			'$("#', id, '").width($("#', id, '").width() + 35)');
 		list: orderedChoices;
 		beOptional;
 		class: 'selectOneInput';

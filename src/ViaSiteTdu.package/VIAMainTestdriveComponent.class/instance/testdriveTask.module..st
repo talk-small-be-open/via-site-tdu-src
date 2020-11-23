@@ -1,7 +1,7 @@
 as yet unclassified
 testdriveTask: aTask module: aModule
 	| component |
-	component := (VIATduTaskExerciser testdrive: aTask module: aModule).
+	component := (VIATduModuleExerciser testdrive: aModule task: aTask).
 	component addForm removeButtons.
 
-	self coreComponent: component
+	self coreComponent: component.
