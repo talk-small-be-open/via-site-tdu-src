@@ -8,7 +8,7 @@
 
 // Import via out of the box styles
 // TODO: Sobald outofthebox einigermasse stabil, dann hierhin kopieren und getrennte wege gehen
-@import "../../base/web_root/css/outofthebox.less";
+@import "../../base/web_root/css/outofthebox/main.less";
 
 @level-a1:       #00cc67;    
 @level-a2:       #3399cc;
@@ -58,9 +58,29 @@
 
 body {
 		&.loggedIn {
+				//		background-color: lighten(desaturate(@global-primary-background, 30%), 110%, relative);
+				//		background-color: #eee;
+
+				// Kein Background mehr laut Sara
+				// background-image: @fixed-background-b;	
+				// -webkit-background-size: cover;
+				// -moz-background-size: cover;
+				// -o-background-size: cover;
+				// background-size: cover;
+				// background-attachment: fixed;
+
 				background-color: white;
+
+				div.core {
+						//				background: rgba(255,255,255,0.8);
+						background-color: white;
+						min-height: 500px;
+				}
 		}
 }
+
+
+
 
 div.coreContainer {
 		padding-top: 1em;
@@ -228,6 +248,149 @@ nav.tdu-navbar {
 
 		}
 }
+
+
+
+//
+// ModuleExerciser
+//
+div.VIATduModuleExerciser {
+
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+
+		// 
+		// Titel besser
+		//
+		h2.moduleTitle {
+				padding:5px 5px 5px 5px;
+				background-color: #fff;
+				border-bottom: 1px solid #F00;
+				font-weight: 200;
+				font-size: 2em;
+
+				span.level-badge {
+						width: 50px;
+						height: 50px;
+						padding: 5px;
+				}
+
+				span.rating {
+						float: right;
+				}
+		}
+
+		div.moduleMenu {
+				margin-bottom: 5px;
+				
+				div.rating {
+						a.noRating {
+								color: @global-muted-color;
+						}
+				}
+		}
+
+		div.swissgermanToolbox {
+				margin-bottom: 5px;
+		}
+
+		div.hiddenTaskExercise {
+				// Nicht display:none, weil das Berechnungen mit Breite etc. nicht möglich macht
+				
+				// height: 0px;
+				// visibility: hidden;
+				// overflow: hidden;
+
+				// position: absolute; 
+				// overflow: hidden; 
+				// clip: rect(0 0 0 0); 
+				// height: 1px; width: 1px; 
+				// margin: -1px; padding: 0; border: 0; 
+
+				
+				position: absolute !important;
+				top: -9999px !important;
+				left: -9999px !important;
+				width: 100%; // TODO: Smarter, aber ich fand nicht heraus, wo die Breite drin steht. Wir brauchen aber eine feste Breite, damit die Berechnung per JS OK ist
+				visibility: hidden;
+				
+				// div.VIAExerciserComponent {
+				// 		height: 0px;
+				// }
+		}
+
+		div.moduleDetails {
+				margin-bottom: 20px;
+				
+				span.moduleEmbedHtml {
+						font-family: monospace;
+						display: block;
+						font-size: 80%;
+						border: 1px solid #999;
+						line-height: 0.9em;
+						padding: 1px;
+						margin: 2px 0;
+						background-color: #eee;
+				}
+		}
+		
+		div.moduleFootnotes {
+				margin-top: 20px;
+				border: 1px solid #ddd;
+				padding: 5px;
+		}
+
+		div.teacherNotes {
+				.uk-hidden();
+		}
+
+
+		
+}
+
+//
+// Exam Exerciser
+//
+div.VIATduExamModuleExerciser {
+
+		div.submitExam {
+
+				margin-top: 75px;
+				
+				.uk-button.submitExam {
+						background: #f00;
+						color: #fff;
+						border:  0px;
+						padding: 10px;
+						font-size: 1.2em;
+				}
+		}
+}
+
+
+//
+// Personal portfolio
+//
+div.VIAMyPortfolioComponent {
+		div.certificatePreview {
+				border: 20px white solid;
+				margin-top: 15px;
+		}
+
+		a.certificatePreview,
+		a.certificatePreview:hover {
+				color: inherit;
+		}
+
+}
+
+
+
+
+
+
+
+
 
 //
 // Fixed backgrounds variants
