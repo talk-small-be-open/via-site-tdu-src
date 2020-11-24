@@ -7,6 +7,7 @@ updateRoot: anHtmlRoot
 	self updateRootDefaultUi: anHtmlRoot.
 	self updateRootSite: anHtmlRoot.
 	self updateRootMaps: anHtmlRoot.
+	self updateRootCookieConsent: anHtmlRoot.
 	
 "	self updateRootPwa: anHtmlRoot."
 
