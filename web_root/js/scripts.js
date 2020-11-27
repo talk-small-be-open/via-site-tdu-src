@@ -16,9 +16,10 @@ function login_facebook() {
 function login_google() {
 	var google = hello('google');
 	// var url = ['https://', window.location.host].join('');
-	var url = window.location.href;
+	// var url = window.location.href;
+	var url = '/site/hellojs.html';
 	
-	google.login({redirect_uri: url, scope: 'email'}, function(auth) {
+	google.login({display: 'popup', redirect_uri: url, scope: 'email'}, function(auth) {
 		
 		google.api('me').then(function(json) {
 			window.location.href = window.location.pathname+"?"+$.param({"access_token": auth.authResponse.access_token, "network": auth.authResponse.network, "first_name": json.first_name, "last_name": json.last_name, "email": json.email});
