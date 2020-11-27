@@ -5,19 +5,21 @@
 //setCookiesAllowed();
 
 function login_facebook() {
-//	var url = ['https://', window.location.host].join('');
-	var url = window.location.href;
+	// var url = ['https://', window.location.host].join('');
+	//	var url = window.location.href;
+	var url = '/site/hellojs.html';
 
-	hello.login("facebook", {redirect_uri: url, scope: 'email'}, function(auth) {
+	hello.login("facebook", {display: 'popup', redirect_uri: url, scope: 'email'}, function(auth) {
 		window.location.href = window.location.pathname+"?"+$.param({"access_token": auth.authResponse.access_token, "network": auth.authResponse.network});})
 }
 
 function login_google() {
 	var google = hello('google');
 	// var url = ['https://', window.location.host].join('');
-	var url = window.location.href;
+	// var url = window.location.href;
+	var url = '/site/hellojs.html';
 	
-	google.login({redirect_uri: url, scope: 'email'}, function(auth) {
+	google.login({display: 'popup', redirect_uri: url, scope: 'email'}, function(auth) {
 		
 		google.api('me').then(function(json) {
 			window.location.href = window.location.pathname+"?"+$.param({"access_token": auth.authResponse.access_token, "network": auth.authResponse.network, "first_name": json.first_name, "last_name": json.last_name, "email": json.email});
