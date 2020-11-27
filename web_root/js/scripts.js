@@ -2,9 +2,11 @@
 // 321 JavaScript
 //
 
+//setCookiesAllowed();
 
 function login_facebook() {
-	var url = [window.location.protocol, '//', window.location.host].join('');
+//	var url = ['https://', window.location.host].join('');
+	var url = window.location.href;
 
 	hello.login("facebook", {redirect_uri: url, scope: 'email'}, function(auth) {
 		window.location.href = window.location.pathname+"?"+$.param({"access_token": auth.authResponse.access_token, "network": auth.authResponse.network});})
@@ -12,7 +14,8 @@ function login_facebook() {
 
 function login_google() {
 	var google = hello('google');
-	var url = [window.location.protocol, '//', window.location.host].join('');
+	// var url = ['https://', window.location.host].join('');
+	var url = window.location.href;
 	
 	google.login({redirect_uri: url, scope: 'email'}, function(auth) {
 		
