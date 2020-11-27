@@ -5,11 +5,9 @@ m001RewriteModuleLevels
 		website := eachWd website.
 		tags := Dictionary new.
 
-		eachWd exerciseLevels do: [ :each |
-			tags at: each put: (VIALevelTag findOrCreateByCode: each website: website) ].
-		
 		eachWd modules do: [ :each |
-			| tag |
-			tag := tags at: each exerciseLevel ifAbsent: [nil].
+			| tag el |
+			el := each instVarNamed: 'exerciseLevel'.
+			tag := tags at: el ifAbsentPut: [(VIALevelTag findOrCreateByCode: el website: website)].
 			tag ifNotNil: [
 				each classification levelTag: tag ]]]

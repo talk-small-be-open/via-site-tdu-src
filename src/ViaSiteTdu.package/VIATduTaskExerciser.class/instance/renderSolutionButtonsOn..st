@@ -6,5 +6,5 @@ renderSolutionButtonsOn: html
 		callback: [self reset];
 		with: [
 			html t: 'exerciser:reset'.
-			html small t: 'exerciser:reset:info'.
+			html small pT: 'exerciser:reset:info'.
 		].
