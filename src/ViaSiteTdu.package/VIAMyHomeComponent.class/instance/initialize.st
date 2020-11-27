@@ -1,6 +1,7 @@
 as yet unclassified
 initialize
 
+	| showMap |
 	super initialize.
 
 	showMap := self isFeature: #showSwissMapOnMyHome.

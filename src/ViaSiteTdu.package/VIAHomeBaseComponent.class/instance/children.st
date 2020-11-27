@@ -1,3 +1,3 @@
 rendering
 children
-	^Array with: swissmap
+	^Array with: swissmap with: worldmap
