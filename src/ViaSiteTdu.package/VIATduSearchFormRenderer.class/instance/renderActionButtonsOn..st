@@ -1,0 +1,44 @@
+rendering
+renderActionButtonsOn: html
+"	html ukGrid
+		class: 'uk-grid-small uk-child-width-auto@s uk-child-width-1-2';
+		with: ["
+
+"			html div: [
+				html ukSubmitButton
+					id: 'searchButton';
+					class: 'defaultButton searchButton';
+					class: 'uk-width-expand';
+					callback: [self performSearch];
+					t: 'searchForm:search' ]."
+
+				html ukSubmitButton
+					callback: [self performBlankSearch];
+"					class: ('uk-button level-a1');"
+					t: 'searchForm:showAll'.
+
+
+"				html ukSubmitButton
+					class: 'showAll searchButton';
+					class: 'uk-width-expand';
+					callback: [self performBlankSearch];
+					t: 'searchForm:showAll' ]."
+
+			self ifTeacher: [
+					html ukSubmitButton
+"						class: 'showAll searchButton';
+						class: 'uk-width-expand';"
+						callback: [self performExamsSearch];
+						with: [ html iconExam ]
+"						t:'searchForm:showAllExams'" ].
+
+				html ukSubmitButton
+"					beSubmit;"
+"					class: 'searchButton';
+					class: 'uk-width-expand';"
+					callback: [self toggleExtendedSearchAndPerform];
+					with: [
+						html fasIcon: 'filter'.
+"						html t: (self isExtendedSearch ifTrue: ['searchForm:less'] ifFalse: ['searchForm:more'])"
+					]
+			

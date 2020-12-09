@@ -1,13 +1,17 @@
 rendering
 initializeMenu
+	| entry |
+	
 	super initializeMenu.
 	
 	mainMenu := VIAMenu new.
 
-	mainMenu addEntry: 'menu:searchModule' send: #gotoSearchModule to: self.
+	entry := mainMenu addEntry: 'menu:searchModule' send: #gotoSearchModule to: self.
+	entry icon: #search.
 	mainMenu addDivider.
 
-	mainMenu addEntry: 'menu:myPortfolio' send: #gotoMyPortfolio to: self.
+	entry := mainMenu addEntry: 'menu:myPortfolio' send: #gotoMyPortfolio to: self.
+	entry icon: #portfolio.
 	mainMenu addDivider.
 		
 	self ifTeacher: [

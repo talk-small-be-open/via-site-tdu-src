@@ -8,8 +8,9 @@ initializeAccountMenu
 	self ifTeacher: [
 		userLabel := userLabel,	' (', ('menu:iAmTeacher't), ')' ].
 				
-	subMenu mainEntry: (VIATextMenuEntry label: userLabel).
-
+	entry := (VIATextMenuEntry label: userLabel).
+	entry icon: #account.
+	subMenu mainEntry: entry.
 
 	entry := subMenu addEntry: 'menu:logout' send: #logout to: self.
 "	entry

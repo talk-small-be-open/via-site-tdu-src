@@ -14,6 +14,7 @@ renderDetailInfoOn: html
 		beHidden;
 		class: 'moduleDetails';
 		with: [
+			self renderMenuOn: html.
+			self renderSharingInfoOn: html.
 			self renderModuleDetailsOn: html.
-			self renderSharingInfoOn: html
 		]

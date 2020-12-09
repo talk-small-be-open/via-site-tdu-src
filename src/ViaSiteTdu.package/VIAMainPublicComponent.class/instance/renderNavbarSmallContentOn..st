@@ -7,10 +7,10 @@ renderNavbarSmallContentOn: html
 	html div class: 'uk-navbar-right'; with: [
 		html anchor
 			class: 'mainMenuToggler';
+			class: 'uk-navbar-item';
 			ukToggleTarget: '#mainMenu';
 			with: [
-				html iconMenu.
-				html t: 'general:menu']
+				html iconMenu]
 	].
 	
 	html div

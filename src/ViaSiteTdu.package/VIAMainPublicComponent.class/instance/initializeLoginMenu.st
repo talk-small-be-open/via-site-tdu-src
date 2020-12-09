@@ -4,7 +4,9 @@ initializeLoginMenu
 	subMenu := mainMenu addSubMenu.
 	mainMenu addDivider.
 
-	subMenu mainEntry: (VIAActionMenuEntry label: 'menu:login' action: [ self openLoginDialog ]).
+	entry := (VIAActionMenuEntry label: 'menu:login' action: [ self openLoginDialog ]).
+	entry icon: #login.
+	subMenu mainEntry: entry.
 	subMenu css: 'loginMenu'.
 
 	entry := subMenu addItem: (VIAJavascriptMenuEntry label: 'menu:facebookLogin').

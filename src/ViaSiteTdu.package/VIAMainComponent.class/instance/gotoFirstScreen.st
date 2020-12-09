@@ -8,6 +8,8 @@ gotoFirstScreen
 		self session clearGotoModule.
 		self gotoModule: m. ^self].
 
-	self currentPortfolio isEmpty
+"	self currentPortfolio isEmpty
 		ifTrue: [self gotoHome]
-		ifFalse: [self gotoMyPortfolio]
+		ifFalse: [self gotoMyPortfolio]"
+		
+	self gotoHome

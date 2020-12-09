@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "VIARenderer",
+	"category" : "ViaSiteTdu-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"searchText",
+		"query",
+		"isExtendedSearch",
+		"levelTags"
+	],
+	"name" : "VIATduSearchFormRenderer",
+	"type" : "normal"
+}

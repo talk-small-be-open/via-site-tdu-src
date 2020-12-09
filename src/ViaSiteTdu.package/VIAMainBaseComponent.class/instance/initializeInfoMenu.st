@@ -1,10 +1,13 @@
 rendering
 initializeInfoMenu
-	| subMenu |
+	| subMenu entry |
 	subMenu := mainMenu addSubMenu.
 	mainMenu addDivider.
 
-	subMenu mainEntry: (VIATextMenuEntry label: 'menu:info').
+	entry := (VIATextMenuEntry label: 'menu:info').
+	entry icon: #info.
+	subMenu mainEntry: entry.
+
 	
 	subMenu addEntry: 'menu:info:about' send: #showText: to: self arg: '321via:info:about'.
 	subMenu addEntry: 'menu:info:credits' send: #showText: to: self arg: '321via:info:credits'.

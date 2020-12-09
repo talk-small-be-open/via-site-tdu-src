@@ -5,11 +5,16 @@ renderNavbarSmallContentOn: html
 	].
 	html div class: 'uk-navbar-right'; with: [
 		html anchor
+			class: 'uk-navbar-item';
+			callback: [ self gotoMyPortfolio ];
+			with: [html iconPortfolio].
+		html anchor
+			class: 'uk-navbar-item';
 			class: 'mainMenuToggler';
 			ukToggleTarget: '#mainMenu';
 			with: [
 				html iconMenu.
-				html t: 'general:menu']
+				"html t: 'general:menu'"]
 	].
 	
 	html div

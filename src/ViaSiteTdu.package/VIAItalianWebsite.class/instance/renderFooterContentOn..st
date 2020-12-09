@@ -1,6 +1,12 @@
 as yet unclassified
 renderFooterContentOn: html
 "	self renderDisclaimerOn: html."
+	html image
+		class: 'supporterLogo';
+		url: '/site/images/BAK.png'.
+	html image
+		class: 'supporterLogo';
+		url: '/site/images/RSI.svg'.
 	html div class: 'awards'; with: [
 		html span class: 'uk-visible@s'; t: '321via:footnotes:awards'.
 		html space.

@@ -1,5 +1,5 @@
 rendering
-renderTutorialOn: html
+renderJumboOn: html
 	| itCoords frCoords deCoords imageWidth stretch stretcher |
 	
 	"Originalwerte waren von 800px Breite"
@@ -12,7 +12,7 @@ renderTutorialOn: html
 	frCoords := #(446 106 571 122 557 198 437 177) collect: stretcher.
 	deCoords := #(405 200 527 196 535 265 412 279) collect: stretcher.
 	
-	html div class: 'tdu-fixed-background-a'; with: [
+	html div class: 'jumbo tdu-fixed-background-a'; with: [
 		html div class: 'uk-container tdu-margin-large-vertical uk-text-center '; with: [
 "			html div id: 'award'; with: [
 				html anchor
@@ -21,6 +21,13 @@ renderTutorialOn: html
 					with: [
 						html image
 							url: '/files/images/logo321viaIELA.png']]."
+			html anchor
+				class: 'loginButton';
+				callback: [ self app openLoginDialog ];
+				with: [
+					html iconLogin; space.
+					html t: 'publicHome:loginHere' ].
+				
 			self website hasTutorialVideo ifTrue: [
 				html div class: 'videoTutorial'; with: [
 					html image

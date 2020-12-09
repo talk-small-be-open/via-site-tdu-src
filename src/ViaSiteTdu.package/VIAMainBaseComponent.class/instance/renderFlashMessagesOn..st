@@ -6,7 +6,7 @@ renderFlashMessagesOn: html
 				flashErrorMessages do: [:each |
 					html div: each]]]."
 	flashMessages ifNotEmpty: [
-		html div class: 'flashMessages'; with: [
+		html div class: 'uk-container uk-container-expand flashMessages'; with: [
 			html div class: 'uk-alert uk-alert-success'; with: [
 				flashMessages do: [:each |
 					html div: [
