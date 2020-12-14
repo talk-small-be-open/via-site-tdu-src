@@ -13,6 +13,7 @@ renderActionButtonsOn: html
 					t: 'searchForm:search' ]."
 
 				html ukSubmitButton
+					class: 'actionButton';
 					callback: [self performBlankSearch];
 "					class: ('uk-button level-a1');"
 					t: 'searchForm:showAll'.
@@ -28,6 +29,7 @@ renderActionButtonsOn: html
 					html ukSubmitButton
 "						class: 'showAll searchButton';
 						class: 'uk-width-expand';"
+						class: 'actionButton';
 						callback: [self performExamsSearch];
 						with: [ html iconExam ]
 "						t:'searchForm:showAllExams'" ].
@@ -36,6 +38,7 @@ renderActionButtonsOn: html
 "					beSubmit;"
 "					class: 'searchButton';
 					class: 'uk-width-expand';"
+					class: 'actionButton';
 					callback: [self toggleExtendedSearchAndPerform];
 					with: [
 						html fasIcon: 'filter'.
