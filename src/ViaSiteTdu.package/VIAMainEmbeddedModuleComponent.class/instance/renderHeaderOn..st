@@ -1,7 +1,6 @@
 as yet unclassified
 renderHeaderOn: html
-	html image
-		url: ('/site/images/', self website logoFilename);
+	(html logoImageFor: self website)
 		height: 'auto';
 		width: 50.
 

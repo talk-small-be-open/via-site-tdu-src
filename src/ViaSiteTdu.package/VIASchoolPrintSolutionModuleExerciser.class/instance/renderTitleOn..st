@@ -2,8 +2,7 @@ as yet unclassified
 renderTitleOn: html
 	html heading level2; class: 'moduleTitle'; with: [
 		html span class: 'logo'; with: [
-			html image
-				url: ('/site/images/', self website logoFilename);
+			(html logoImageFor: self website)
 				height: 'auto';
 				width: '60px'.
 			html break.
