@@ -3,7 +3,8 @@ initialize
 
 	| showMap |
 	super initialize.
-	searchFormRenderer := VIATduEasySearchFormRenderer component: self.
+"	searchFormRenderer := VIATduEasySearchFormRenderer component: self."
+	searchFormRenderer := VIATduSearchFormRenderer component: self.
 
 	showMap := self isFeature: #showSwissMapOnPublicHome.
 	showMap ifTrue: [

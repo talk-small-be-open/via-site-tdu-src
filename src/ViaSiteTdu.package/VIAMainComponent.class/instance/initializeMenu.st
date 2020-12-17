@@ -15,7 +15,8 @@ initializeMenu
 	mainMenu addDivider.
 		
 	self ifTeacher: [
-		mainMenu addEntry: 'menu:myTeacherCockpit' send: #gotoMyTeacherCockpit to: self.
+		entry := mainMenu addEntry: 'menu:myTeacherCockpit' send: #gotoMyTeacherCockpit to: self.
+		entry icon: #exam.
 		mainMenu addDivider.
 	].
 

@@ -3,13 +3,15 @@ renderContentOn: html
 
 "	self renderModulesShowReelOn: html"
 	
-"	self renderTutorialOn: html."
-"	html heading t: 'myHome:title'."
-"	html paragraph with: [
-		html t: 'myHome:info']."
-
 	self renderSearchOn: html.
-	html break; break.
+
+	html break.
+	self currentPortfolio isEmpty ifFalse: [
+		html ukContainer: [
+			html ukAnchorButton
+				callback: [ self app gotoMyPortfolio ];
+				with: [ html iconPortfolio; space; t: 'myHome:gotoPortfolio' ]]].
+	html break.
 	self renderAppetizerOn: html
 
 "	self renderShowRoomOn: html."

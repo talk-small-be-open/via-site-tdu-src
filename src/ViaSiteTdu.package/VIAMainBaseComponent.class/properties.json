@@ -6,11 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"coreComponent",
 		"flashMessages",
 		"mainMenu",
 		"menuRenderer",
-		"hideBrowserMessage"
+		"hideBrowserMessage",
+		"backtraced"
 	],
 	"name" : "VIAMainBaseComponent",
 	"type" : "normal"

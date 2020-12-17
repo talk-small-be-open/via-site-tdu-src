@@ -5,6 +5,7 @@ renderNonFirstTakeButtonsOn: html
 "		popover: 'exerciser:recheck:info't;"
 		callback: [self recheck];
 		with: [
+			html iconCheckIt; space.
 			html t: 'exerciser:recheck'.
 			html small pT: 'exerciser:recheck:info'.
 		].
@@ -20,6 +21,7 @@ renderNonFirstTakeButtonsOn: html
 "		popover: 'exerciser:showAnswers:info't;"
 		callback: [self revealAnswers];
 		with: [
+			html iconShowSolution; space.
 			html t: 'exerciser:showAnswers'.
 			html small pT: 'exerciser:showAnswers:info'.
 		]

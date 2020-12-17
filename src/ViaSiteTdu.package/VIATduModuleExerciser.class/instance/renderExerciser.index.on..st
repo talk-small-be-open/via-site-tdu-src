@@ -16,12 +16,13 @@ renderExerciser: aTaskExerciser index: anInteger on: html
 					html iconActivityType: each]
 				].
 			html div class: 'acc-title'; with: [
-				aTaskExerciser task classification activityTypeTags do: [:each |
+"				aTaskExerciser task classification activityTypeTags do: [:each |
 					html text: each text capitalized]
-				separatedBy: [html space]
-				].
+				separatedBy: [html space]"
+				html text: aTaskExerciser task title
+			].
 			html div class: 'acc-toggle'; with: [ html iconDropdown ].
-			html div class: 'uk-visible@s acc-subtitle'; with: aTaskExerciser task title.
+			html div class: 'uk-visible@s acc-subtitle'; with: aTaskExerciser task subtitle.
 	"		self renderScoreTask: aTaskExerciser exercise on: html"].
 	
 	html div

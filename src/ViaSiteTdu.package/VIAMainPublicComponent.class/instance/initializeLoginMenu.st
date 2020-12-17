@@ -21,7 +21,7 @@ initializeLoginMenu
 		icon: #googleOfficial;
 		script: 'login_google()'.
 
-	subMenu addEntry: 'menu:localLogin' send: #openLocalLoginDialog to: self.
+	(subMenu addEntry: 'menu:localLogin' send: #openLocalLoginDialog to: self) icon: #login.
 	(subMenu addEntry: 'menu:downloadLoginHelp' send: #downloadLocalLoginHelpPdf to: self) icon: #help.
 
 "				self ifDevelopment: [
