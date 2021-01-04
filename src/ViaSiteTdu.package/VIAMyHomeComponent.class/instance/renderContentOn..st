@@ -8,6 +8,7 @@ renderContentOn: html
 	html break.
 	self currentPortfolio isEmpty ifFalse: [
 		html ukContainer: [
+			html heading level4 pT: 'myHome:myPortfolioTitle'.
 			html ukAnchorButton
 				callback: [ self app gotoMyPortfolio ];
 				with: [ html iconPortfolio; space; t: 'myHome:gotoPortfolio' ]]].

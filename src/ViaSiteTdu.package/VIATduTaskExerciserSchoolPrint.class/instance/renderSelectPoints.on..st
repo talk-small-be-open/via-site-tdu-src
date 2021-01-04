@@ -12,7 +12,7 @@ renderSelectPoints: aSelectPointsInput on: html
 					cs do: [:each | 
 						html listItem: [
 							html span class: 'listItemIcon'; with: [html ukIcon: 'circle-o'].
-							html span: (aSelectPointsInput labelForChoice: each)]]]].
+							html pillarString: (aSelectPointsInput labelForChoice: each)]]]].
 		self renderFootnoteSymbolOfBrick: aSelectPointsInput on: html.
 
 	]

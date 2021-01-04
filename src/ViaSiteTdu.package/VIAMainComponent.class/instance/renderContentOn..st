@@ -9,4 +9,5 @@ renderContentOn: html
 	html div class: 'coreContainer'; with: [
 		self renderCoreOn: html].
 
-	self renderFooterOn: html
+	self isExercising ifFalse: [
+		self renderFooterOn: html ]

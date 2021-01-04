@@ -7,7 +7,7 @@ renderFooterContentOn: html
 	html image
 		class: 'supporterLogo';
 		url: '/site/images/RSI.svg'.
-	html div class: 'awards'; with: [
+	html span class: 'awards'; with: [
 		html span class: 'uk-visible@s'; t: '321via:footnotes:awards'.
 		html space.
 		html anchor
