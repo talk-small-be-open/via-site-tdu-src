@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "VIAHelper",
+	"category" : "ViaSiteTdu-Misc",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "VIATduHelper",
+	"type" : "normal"
+}

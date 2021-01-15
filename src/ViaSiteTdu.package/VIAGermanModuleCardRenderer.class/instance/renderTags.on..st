@@ -5,11 +5,9 @@ renderTags: aModule on: html
 		self displayedTagsForModule: aModule do: [:each |
 			html text: each text] separatedBy: [html text: ', '].
 
-		(self isSwissGerman: aModule) ifTrue: [
+"		(self isSwissGerman: aModule) ifTrue: [
 			html div
 				class: 'swissGermanSymbol';
-				with: [
-					html fasIcon: 'comment'; space.
-					html text: 'GRÜEZI']
-		]
+				with: [ html iconTopic: swissGerman ]
+		]"
 	]

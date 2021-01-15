@@ -1,6 +1,7 @@
 rendering
 renderExerciser: aTaskExerciser index: anInteger on: html
-	| id |
+	| id task |
+	task := aTaskExerciser task.
 	id := html nextId.
 	html div
 		ukToggleTarget: ('#', id) class: 'hiddenTaskExercise' "animation: 'uk-animation-fade'";
@@ -12,14 +13,18 @@ renderExerciser: aTaskExerciser index: anInteger on: html
 		with: [
 			html div class: 'acc-number'; with: anInteger.
 			html div class: 'acc-icon'; with: [
-				aTaskExerciser task classification activityTypeTags do: [:each |
+				task classification activityTypeTags do: [:each |
 					html iconActivityType: each]
 				].
 			html div class: 'acc-title'; with: [
 "				aTaskExerciser task classification activityTypeTags do: [:each |
 					html text: each text capitalized]
 				separatedBy: [html space]"
-				html text: aTaskExerciser task title
+				html text: task title.
+				html space; space.
+				task classification topicTags do: [:each |
+					each isUsingIcon ifTrue: [
+						html iconTopic: each]]
 			].
 			html div class: 'acc-toggle'; with: [ html iconDropdown ].
 			html div class: 'uk-visible@s acc-subtitle'; with: aTaskExerciser task subtitle.
