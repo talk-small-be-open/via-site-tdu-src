@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "VIAComponent",
+	"super" : "VIAFrontendMainBaseComponent",
 	"category" : "ViaSiteTdu-View",
 	"classinstvars" : [ ],
 	"pools" : [ ],

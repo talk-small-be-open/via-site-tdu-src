@@ -9,7 +9,7 @@ renderBrowserTypeMessagesOn: html
 			ifNotBlank: [
 				browser ifNotBlank: [
 					html div class: 'uk-margin uk-container uk-container-expand browserWarning'; with: [
-						html ukAlertDanger: [
+						html ukAlertWarning: [
 							html anchor
 								class: 'uk-alert-close';
 								a: 'uk-close';

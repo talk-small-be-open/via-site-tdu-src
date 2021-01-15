@@ -4,6 +4,7 @@ renderContentOn: html
 "		self renderMenuOn: html."
 "	html div class: 'uk-container uk-container-expand'; with: ["
 	self renderBrowserTypeMessagesOn: html.
+	self renderSystemMessageOn: html.
 	self renderFlashMessagesOn: html.
 
 	html div class: 'coreContainer'; with: [
