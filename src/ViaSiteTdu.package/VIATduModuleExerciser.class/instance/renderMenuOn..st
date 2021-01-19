@@ -32,13 +32,12 @@ renderMenuOn: html
 				with: [
 					html iconPdf class: 'bullet'.
 					html t: 'moduleExerciser:downloadSchoolPrintSolutionPdf']].
-		self ifTeacher: [
-			html div: [
-				html anchor
-					callback: [self downloadAssetsZipPackage];
-					with: [
-						html iconDownload class: 'bullet'.
-						html t: 'moduleExerciser:downloadAssetsZipPackage']]].
+		html div: [
+			html anchor
+				callback: [self downloadAssetsZipPackage];
+				with: [
+					html iconDownload class: 'bullet'.
+					html t: 'moduleExerciser:downloadAssetsZipPackage']].
 		model hasTeacherNotes ifTrue: [
 			html div: [
 				html

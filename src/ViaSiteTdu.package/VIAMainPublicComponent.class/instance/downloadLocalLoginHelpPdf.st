@@ -3,7 +3,7 @@ downloadLocalLoginHelpPdf
 	| file |
 	file := VIALocalFileReference new
 		fileBasePath: (self db propertyAt: #webRootPath);
-		fileRelativePath: 'site';
+		fileRelativePath: 'site/downloads';
 		fileName: 'login_help.pdf';
 		yourself.
 
