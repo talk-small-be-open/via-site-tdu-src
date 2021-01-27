@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "VIASchoolPrintModuleExerciser",
+	"super" : "VIATduSchoolPrintModuleExerciser",
 	"category" : "ViaSiteTdu-View",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "VIASchoolPrintSolutionModuleExerciser",
+	"name" : "VIATduSchoolPrintSolutionModuleExerciser",
 	"type" : "normal"
 }

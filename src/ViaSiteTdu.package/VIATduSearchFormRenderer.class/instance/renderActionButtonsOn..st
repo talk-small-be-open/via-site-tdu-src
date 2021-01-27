@@ -12,6 +12,13 @@ renderActionButtonsOn: html
 					callback: [self performSearch];
 					t: 'searchForm:search' ]."
 
+				"Functional but invisible"
+				html submitButton
+					id: 'searchButton';
+					class: 'defaultButton searchButton';
+					style: 'display: none';
+					callback: [self performSearch].
+
 				html ukSubmitButton
 					class: 'actionButton';
 					callback: [self performBlankSearch];

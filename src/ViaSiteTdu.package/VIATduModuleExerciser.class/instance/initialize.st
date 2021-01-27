@@ -12,13 +12,13 @@ initialize
 
 	showIgnoreSwissgerman := false.
 
-	(self website languageCode = #de) ifTrue: [
+"	(self website languageCode = #de) ifTrue: [
 		| swissgermanExercises tag |
 		tag := self website swissGermanTag.
 		swissgermanExercises := moduleExercise taskExercises select: [ :each | each task hasTopicTag: tag ].
 		showIgnoreSwissgerman := swissgermanExercises notEmpty and: [
 			(swissgermanExercises allSatisfy: [ :each | each isIgnored ]) not ]
-	].
+	]."
 	
 	self addForm
 		removeButtons.

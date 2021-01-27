@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "VIALoginBaseComponent",
+	"category" : "ViaSiteTdu-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"afterLoginBlock",
+		"facebook",
+		"google",
+		"local"
+	],
+	"name" : "VIATduLoginComponent",
+	"type" : "normal"
+}

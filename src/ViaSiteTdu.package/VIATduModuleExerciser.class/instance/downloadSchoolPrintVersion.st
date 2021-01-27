@@ -1,5 +1,5 @@
 actions
 downloadSchoolPrintVersion
 	| printer |
-	printer := VIASchoolPrintModuleExerciser model: model.
+	printer := VIATduSchoolPrintModuleExerciser model: model.
 	printer downloadPdf

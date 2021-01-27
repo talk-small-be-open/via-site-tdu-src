@@ -10,7 +10,7 @@ renderContentOn: html
 		html div: [self renderScoreOn: html ].
 	].
 
-	self renderSwissgermanToolboxOn: html.
+"	self renderSwissgermanToolboxOn: html."
 
 	self renderBodyOn: html.
 	self renderFooterOn: html

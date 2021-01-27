@@ -1,0 +1,3 @@
+as yet unclassified
+downloadLocalLoginHelpPdf
+	self app downloadLocalLoginHelpPdf

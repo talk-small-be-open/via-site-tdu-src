@@ -1,7 +1,7 @@
 actions
 openLocalLoginDialog
 	| login |
-	login := VIALoginComponent new.
+	login := self am loginComponentClass new.
 	login
 		beLocalOnly;
 		messageKey: 'mainPublic:pleaseLogin:info'.
