@@ -23,4 +23,6 @@ initialize
 			onClick: [:modules | self chooseFromModules: modules];
 			modules: self wd publicModules
 			
-		]
+		].
+	
+	sisterWebsites := self db websites copyWithout: self website.

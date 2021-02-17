@@ -9,7 +9,7 @@ renderOn: html
 					with: [
 						html ukGrid class: 'uk-grid-small'; with: [
 
-							html div class: 'uk-width-1-3 uk-width-auto@m uk-flex uk-flex-middle'; with: [
+							html div class: 'uk-width-1-1 uk-width-auto@m uk-flex uk-flex-middle'; with: [
 								html div class: 'uk-search uk-search-default'; with: [
 									html span a: 'uk-search-icon'.
 									html textInput
@@ -23,7 +23,7 @@ renderOn: html
 								self renderLevelButtonsOn: html.
 							].
 									
-							html div class: 'uk-width-1-1 uk-width-expand@m uk-flex uk-flex-middle'; with: [
+							html div class: 'uk-width-1-3 uk-width-expand@m uk-flex uk-flex-middle'; with: [
 								self renderActionButtonsOn: html.
 							]
 					].

@@ -5,7 +5,11 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"websites",
+		"modules",
+		"moduleCardRenderer"
+	],
 	"name" : "VIAMainPortalComponent",
 	"type" : "normal"
 }

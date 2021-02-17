@@ -7,5 +7,5 @@ renderHeaderOn: html
 				self ifViewportSmall: [
 					self renderNavbarSmallContentOn: html ]
 				else: [
-					self renderNavbarContentOn: html ]
-	]]]
+					self renderNavbarContentOn: html ]].
+	]]

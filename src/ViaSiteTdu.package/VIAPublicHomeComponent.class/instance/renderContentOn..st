@@ -1,5 +1,8 @@
 rendering
 renderContentOn: html
+
+	self renderSistersOn: html.
+	
 	self renderSearchOn: html.
 
 	self renderJumboOn: html.

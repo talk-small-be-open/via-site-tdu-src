@@ -1,3 +1,3 @@
 enumerating
 websitesDo: aBlock
-	self db websites do: aBlock
+	websites do: aBlock
