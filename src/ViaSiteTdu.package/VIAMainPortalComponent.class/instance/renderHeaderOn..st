@@ -12,6 +12,9 @@ renderHeaderOn: html
 					url: '#projectInfo';
 					sT: 'portal:menu:project'.
 				html anchor
+					url: '#examples';
+					sT: 'portal:menu:examples'.
+				html anchor
 					url: '#patronage';
 					sT: 'portal:menu:patronage'.
 			].
