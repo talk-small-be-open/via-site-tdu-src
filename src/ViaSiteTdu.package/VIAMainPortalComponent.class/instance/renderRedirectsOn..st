@@ -9,19 +9,21 @@ renderRedirectsOn: html
 						class: ('website-', each code);
 						with: [
 
-							html div class: 'callForAction'; with: [
-								html logoImageFor: each.
-								html div class: 'messageBox'; with: [
-									html t: 'portal:claim' l: each language.
+							html div
+								class: 'callForAction';
+								with: [
+									html anchor style: 'color:inherit'; url: each url; with: [
+									html logoImageFor: each.
+									html div class: 'messageBox'; with: [
+										html t: 'portal:claim' l: each language.
 
-									html anchor
-										class: 'actionButton';
-										url: each url;
-										with: [
-											html fasIcon: 'arrow-right'; space.
-											html text: (each code allButFirst: 3).
-											html text: '!'.
-										]].
-								each renderSupporterLogosOn: html.
-							
-				]]]]]]
+										html span
+											class: 'actionButton';
+											with: [
+												html fasIcon: 'arrow-right'; space.
+												html text: (each code allButFirst: 3).
+												html text: '!'.
+											]].
+									each renderSupporterLogosOn: html.
+								
+					]]]]]]]

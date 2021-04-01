@@ -8,7 +8,10 @@
 	"instvars" : [
 		"websites",
 		"modules",
-		"moduleCardRenderer"
+		"moduleCardRenderer",
+		"languageCharMap",
+		"swissmap",
+		"featuredModules"
 	],
 	"name" : "VIAMainPortalComponent",
 	"type" : "normal"

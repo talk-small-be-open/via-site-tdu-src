@@ -6,6 +6,8 @@ updateRoot: anHtmlRoot
 	self updateRootFontawesome: anHtmlRoot.
 	self updateRootDefaultUi: anHtmlRoot.
 "	self updateRootSite: anHtmlRoot."
+	self updateRootMaps: anHtmlRoot.
+
 	self updateRootCookieConsent: anHtmlRoot.
 
 	anHtmlRoot stylesheet url: '/site/css/portal.css'.
