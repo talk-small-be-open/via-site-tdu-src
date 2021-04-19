@@ -1,0 +1,3 @@
+site-config
+mainEmbeddedComponentClass
+	^ VIAMainEmbeddedModuleComponent
