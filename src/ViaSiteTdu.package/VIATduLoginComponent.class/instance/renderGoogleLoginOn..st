@@ -1,6 +1,6 @@
 rendering
 renderGoogleLoginOn: html
-	html anchorButton
+	html anchor
 		class: 'googleLogin';
 		onClick: 'login_google()';
 		with: [
